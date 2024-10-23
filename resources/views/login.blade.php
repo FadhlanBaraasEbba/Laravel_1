@@ -21,4 +21,4 @@
 
     <script src="assets/image/js/script.js"></script>
 </body>
-</html>b
+</html>

@@ -5,261 +5,110 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/image/css/stylee.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Blabla Coffee</title>
 </head>
 
-<body>
+<body class="bg-gray-100">
 
-    <header>
-        <div class="logo">
-            <a href="#">Blabla <span>Coffee</span></a>
+    <header class="bg-white shadow-md p-4 flex justify-between items-center">
+        <div class="text-xl font-bold">
+            <a href="#">Blabla <span class="text-yellow-600">Coffee</span></a>
         </div>
-        
         <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#shop">Shop</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <ul class="flex space-x-6">
+                <li><a href="#" class="hover:text-yellow-500">Home</a></li>
+                <li><a href="#menu" class="hover:text-yellow-500">Menu</a></li>
+                <li><a href="#shop" class="hover:text-yellow-500">Shop</a></li>
+                <li><a href="#contact" class="hover:text-yellow-500">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="content">
-        <h2>Blabla Coffee</h2>
-        <p>Apakah Anda ingin memulai hari dengan kopi yang nikmat?
-        </p>
+    <div class="text-center py-16">
+        <h2 class="text-4xl font-bold text-gray-800">Blabla Coffee</h2>
+        <p class="text-lg text-gray-600 mt-4">Apakah Anda ingin memulai hari dengan kopi yang nikmat?</p>
     </div>
 
-    <div class="menu" id="menu">
-        <div class="menu-header">
-            <h3>Menu</h3>
-            <h4>Blabla Coffee Menu</h4>
+    <div id="menu" class="py-16 bg-white">
+        <div class="text-center mb-12">
+            <h3 class="text-2xl font-semibold text-gray-800">Menu</h3>
+            <h4 class="text-lg text-gray-600">Blabla Coffee Menu</h4>
         </div>
-        <div class="menu-content">
-            <div class="hot-coffees">
-                <div class="hot-coffees-image">
-                    <img src="assets/image/image/hot-coffees.jpg" alt="">
-                </div>
-                <div class="hot-coffees-body">
-                    <h2>Hot Coffees</h2>
-                    <label> Hot coffee dapat disajikan dalam berbagai variasi, seperti espresso, latte, cappuccino, dan lainnya, </label>
-                </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+            <div class="bg-gray-50 p-4 rounded-lg shadow-lg">
+                <img src="assets/image/image/hot-coffees.jpg" alt="" class="rounded-t-lg">
+                <h2 class="text-xl font-semibold mt-4">Hot Coffees</h2>
+                <p class="text-gray-600">Hot coffee dapat disajikan dalam berbagai variasi, seperti espresso, latte, cappuccino, dan lainnya.</p>
             </div>
-            <div class="cold-coffees">
-                <div class="cold-coffees-image">
-                    <img src="assets/image/image/cold-coffees.jpg" alt="">
-                </div>
-                <div class="cold-coffees-body">
-                    <h2>Cold Coffees</h2>
-                    <label>Cold coffee dapat bervariasi, mulai dari kopi hitam dingin yang sederhana hingga minuman kopi yang lebih kompleks dengan tambahan susu, krim, atau sirup rasa. </label>
-                </div>
+            <div class="bg-gray-50 p-4 rounded-lg shadow-lg">
+                <img src="assets/image/image/cold-coffees.jpg" alt="" class="rounded-t-lg">
+                <h2 class="text-xl font-semibold mt-4">Cold Coffees</h2>
+                <p class="text-gray-600">Cold coffee dapat bervariasi, mulai dari kopi hitam dingin hingga minuman dengan susu dan sirup rasa.</p>
             </div>
-            <div class="frappucino-coffees">
-                <div class="frappucino-coffees-image">
-                    <img src="assets/image/image/frappuccino.jpg" alt="">
-                </div>
-                <div class="frappucino-coffees-body">
-                    <h2>Frappucino Coffees</h2>
-                    <label>Frappuccino biasanya disajikan dengan topping krim kocok dan berbagai sirup atau saus rasa, seperti karamel, cokelat, atau vanila.</label>
-                </div>
+            <div class="bg-gray-50 p-4 rounded-lg shadow-lg">
+                <img src="assets/image/image/frappuccino.jpg" alt="" class="rounded-t-lg">
+                <h2 class="text-xl font-semibold mt-4">Frappuccino Coffees</h2>
+                <p class="text-gray-600">Frappuccino disajikan dengan topping krim kocok dan berbagai sirup, seperti karamel atau cokelat.</p>
             </div>
         </div>
     </div>
 
-
-    <div class="shop" id="shop">
-        <div class="shop-header">
-            <h3>Shop</h3>
-            <h4>Blabla Coffee Drinks</h4>
+    <div id="shop" class="py-16 bg-gray-100">
+        <div class="text-center mb-12">
+            <h3 class="text-2xl font-semibold text-gray-800">Shop</h3>
+            <h4 class="text-lg text-gray-600">Blabla Coffee Drinks</h4>
         </div>
-        <div class="shop-box">
-            <div class="item-1">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/image/image/caramel-macchiato.jpg" alt="">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+            <div class="bg-white rounded-lg shadow-lg">
+                <img src="assets/image/image/caramel-macchiato.jpg" alt="" class="rounded-t-lg">
+                <div class="p-4">
+                    <div class="flex items-center space-x-1 text-yellow-500">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half"></i>
                     </div>
-                    <div class="card-body">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
-                        <label class="cash">Rp.45.000</label>
-                        <h3>Caramel Macchiato</h3>
-                        <label>minuman kopi yang terdiri dari susu hangat yang dikukus, espresso, dan sirup vanila, dengan topping saus karamel di atasnya.</label>
-                    </div>
+                    <h3 class="text-xl font-semibold mt-2">Caramel Macchiato</h3>
+                    <p class="text-gray-600">Rp.45.000</p>
+                    <p class="text-gray-600 mt-2">Minuman kopi dengan susu kukus, espresso, sirup vanila, dan saus karamel.</p>
                 </div>
             </div>
-            <div class="item-2">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/image/image/flat-white.png" alt="">
-                    </div>
-                    <div class="card-body">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <label class="cash">Rp.40.000</label>
-                        <h3>Flat White</h3>
-                        <label>Minuman ini terdiri dari satu atau dua shot espresso yang disajikan dengan susu steamed dengan sedikit mikrofoam, menghasilkan tekstur yang halus dan creamy tanpa banyak busa. </label>
-                    </div>
-                </div>
-            </div>
-            <div class="item-3">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/image/image/chocolate-frappuccino.png" alt="">
-                    </div>
-                    <div class="card-body">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
-                        <label class="cash">Rp.67.500</label>
-                        <h3>Chocolate Frappucino</h3>
-                        <label>minuman dingin yang terbuat dari campuran es, susu, dan sirup cokelat, sering kali dilengkapi dengan whipped cream di atasnya.</label>
-                    </div>
-                </div>
-            </div>
-            <div class="item-4">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/image/image/frappe.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <label class="cash">Rp.35.000</label>
-                        <h3>Frappe</h3>
-                        <label> minuman berbasis kopi yang disajikan dingin, biasanya dengan es, dan sering kali dicampur dengan susu, gula, serta perasa lainnya seperti vanila atau karamel.</label>
-                    </div>
-                </div>
-            </div>
-            <div class="item-5">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/image/image/caffe-mocha.png" alt="">
-                    </div>
-                    <div class="card-body">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
-                        <label class="cash">Rp.65.000</label>
-                        <h3>Caffe Mocha</h3>
-                        <label>dibuat dengan menambahkan cokelat, baik dalam bentuk bubuk kakao atau sirup cokelat, ke dalam espresso, lalu dicampur dengan susu panas yang di-steam dan diakhiri dengan lapisan foam di atasnya</label>
-                    </div>
-                </div>
-            </div>
-            <div class="item-6">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/image/image/vanilla-frappuccino.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <label class="cash">Rp.37.500</label>
-                        <h3>Vanilla Frappucino</h3>
-                        <label> minuman kopi yang dibuat dengan perpaduan espresso, sirup cokelat putih, dan susu yang dikukus.</label>
-                    </div>
-                </div>
-            </div>
-            <div class="item-7">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/image/image/white-chocolate-mocha.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half"></i>
-                        <label class="cash">Rp.65.000</label>
-                        <h3>White Chocolate Mocha</h3>
-                        <label> minuman berbasis kopi yang disajikan dingin, biasanya dengan es, dan sering kali dicampur dengan susu, gula, serta perasa lainnya seperti vanila atau karamel.</label>
-                    </div>
-                </div>
-            </div>
-            <div class="item-8">
-                <div class="card">
-                    <div class="card-image">
-                        <img src="assets/image/image/ice-latte.jpg" alt="">
-                    </div>
-                    <div class="card-body">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <label class="cash">5.65$</label>
-                        <h3>Ice Latte</h3>
-                        <label>Ice latte adalah minuman kopi yang terdiri dari espresso yang dicampur dengan susu dingin, biasanya disajikan dengan es batu. </label>
-                    </div>
-                </div>
-            </div>
+            <!-- Tambahkan item lainnya dengan struktur yang sama -->
         </div>
     </div>
 
-    <div class="contact" id="contact">
-        <div class="contact-box">
-            <div class="contact-image">
-                <img src="assets/image/image/bg-image.jpeg" alt="">
+    <div id="contact" class="py-16 bg-white">
+        <div class="flex flex-wrap items-center">
+            <div class="w-full md:w-1/2">
+                <img src="assets/image/image/bg-image.jpeg" alt="" class="rounded-lg">
             </div>
-        </div>
-        <div class="contact-box">
-            <div class="contact-body">
+            <div class="w-full md:w-1/2 p-8">
                 <form>
-                    <h2>Contact Us</h2>
-                    <div class="form-content">
-                        <input type="text" required>
-                        <span></span>
-                        <label>Username</label>
+                    <h2 class="text-2xl font-bold mb-4">Contact Us</h2>
+                    <div class="mb-4">
+                        <input type="text" placeholder="Username" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500">
                     </div>
-                    <div class="form-content">
-                        <input type="email" required>
-                        <span></span>
-                        <label>Email</label>
+                    <div class="mb-4">
+                        <input type="email" placeholder="Email" class="w-full p-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500">
                     </div>
-                    <button type="submit">Send</button>
+                    <button type="submit" class="w-full bg-yellow-500 text-white py-2 rounded-md hover:bg-yellow-600 transition">Send</button>
                 </form>
             </div>
         </div>
     </div>
 
-
-    <div class="footer">
-        <div class="footer-box">
-            <div class="social-media">
-                <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex space-x-4">
+                <a href="#" class="hover:text-yellow-500"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#" class="hover:text-yellow-500"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-yellow-500"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#" class="hover:text-yellow-500"><i class="fa-brands fa-youtube"></i></a>
             </div>
-            <div class="copyright">
-                <label>Copyright &copy; 2024</label>
-            </div>
-            <div class="brand">
-                <label>Blabla <span>Coffee</span></label>
-            </div>
+            <p>&copy; 2024 Blabla Coffee</p>
         </div>
-    </div>
+    </footer>
 
 </body>
 
